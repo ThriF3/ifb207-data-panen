@@ -97,16 +97,20 @@ hasil_panen['lokasi3'] = padi_lokasi3
 hasil_panen['lokasi4'] = padi_lokasi4
 hasil_panen['lokasi5'] = padi_lokasi5
 
+# Soal No. 6
+def cek_panen(data):
+    for i, values in data.items():
+        if values['hasil_panen']['padi'] > 1300 or values['hasil_panen']['jagung'] > 800:
+            print(f"{ values['nama_lokasi'] } memerlukan perhatian khusus.")
+        else:
+            print(f"{ values['nama_lokasi'] } dalam komdisi baik.")
 
 
 def main():
     # tampilkan(data_panen)
     # tampilkan_jagung(data_panen)
     # tampilkan_lokasi3(data_panen)
-    print(hasil_panen)
-    
-    # # Soal Nomor 6
-    # for i, values in data_panen.items():
-    #     if hasil
+    # print(hasil_panen)
+    cek_panen(data_panen)
     
 main()
