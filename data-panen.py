@@ -62,6 +62,32 @@ def tampilkan_jagung(data):
 # Soal Nomor 3
 def tampilkan_lokasi3(data):
     print(data['lokasi3']['nama_lokasi'])
+    
+# Soal Nomor 4 + 5
+padi_lokasi1 = {
+    'panen': data_panen['lokasi1']['hasil_panen']['padi'],
+    'kedelai': data_panen['lokasi1']['hasil_panen']['kedelai'],
+}
+
+padi_lokasi2 = {
+    'panen': data_panen['lokasi2']['hasil_panen']['padi'],
+    'kedelai': data_panen['lokasi2']['hasil_panen']['kedelai'],
+}
+
+padi_lokasi3 = {
+    'panen': data_panen['lokasi3']['hasil_panen']['padi'],
+    'kedelai': data_panen['lokasi3']['hasil_panen']['kedelai'],
+}
+
+padi_lokasi4 = {
+    'panen': data_panen['lokasi4']['hasil_panen']['padi'],
+    'kedelai': data_panen['lokasi4']['hasil_panen']['kedelai'],
+}
+
+padi_lokasi5 = {
+    'panen': data_panen['lokasi5']['hasil_panen']['padi'],
+    'kedelai': data_panen['lokasi5']['hasil_panen']['kedelai'],
+}
 
 
 def main():
