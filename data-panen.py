@@ -107,10 +107,10 @@ def cek_panen(data):
 
 
 def main():
-    tampilkan(data_panen)
-    tampilkan_jagung(data_panen)
-    tampilkan_lokasi3(data_panen)
-    print(hasil_panen)
+    # tampilkan(data_panen)
+    # tampilkan_jagung(data_panen)
+    # tampilkan_lokasi3(data_panen)
+    # print(hasil_panen)
     cek_panen(data_panen)
     
 main()
