@@ -1,3 +1,4 @@
+global data_panen
 data_panen = {
     'lokasi1': {
         'nama_lokasi': 'Kebun A',
@@ -42,11 +43,20 @@ data_panen = {
 }
 
 # Soal Nomor 1
-for i, values in data_panen.items():
-    print(f"> { i }")
-    print(f"  >> Nama Lokast :{ values['nama_lokasi'] }")
-    print("  >> Hasil Panen :");
-    for j, panen in values['hasil_panen'].items():
-        print(f"    >>> { i } :{ panen }")
+def tampilkan(data):
+    for i, values in data.items():
+        print(f"> { i }")
+        print(f"  >> Nama Lokast :{ values['nama_lokasi'] }")
+        print("  >> Hasil Panen :");
+        for j, panen in values['hasil_panen'].items():
+            print(f"    >>> { i } :{ panen }")
+        
+        print("-------------------------------------------")
     
-    print("-------------------------------------------")
+# Soal Nomor 2
+
+
+def main():
+    tampilkan(data_panen)
+    
+main()
