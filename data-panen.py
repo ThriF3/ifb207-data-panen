@@ -58,10 +58,15 @@ def tampilkan_jagung(data):
     print("> Hasil Panen Jagung")
     for i, values in data.items():
         print(f"  > { values['nama_lokasi'] } : { values['hasil_panen']['jagung'] }")
+        
+# Soal Nomor 3
+def tampilkan_lokasi3(data):
+    print(data['lokasi3']['nama_lokasi'])
 
 
 def main():
     # tampilkan(data_panen)
-    tampilkan_jagung(data_panen)
+    # tampilkan_jagung(data_panen)
+    tampilkan_lokasi3(data_panen)
     
 main()
