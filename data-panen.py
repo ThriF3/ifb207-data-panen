@@ -63,7 +63,7 @@ def tampilkan_jagung(data):
 def tampilkan_lokasi3(data):
     print(data['lokasi3']['nama_lokasi'])
     
-# Soal Nomor 4 + 5
+# Soal Nomor 4
 padi_lokasi1 = {
     'panen': data_panen['lokasi1']['hasil_panen']['padi'],
     'kedelai': data_panen['lokasi1']['hasil_panen']['kedelai'],
@@ -89,10 +89,24 @@ padi_lokasi5 = {
     'kedelai': data_panen['lokasi5']['hasil_panen']['kedelai'],
 }
 
+# Soal No. 5
+hasil_panen = {}
+hasil_panen['lokasi1'] = padi_lokasi1
+hasil_panen['lokasi2'] = padi_lokasi2
+hasil_panen['lokasi3'] = padi_lokasi3
+hasil_panen['lokasi4'] = padi_lokasi4
+hasil_panen['lokasi5'] = padi_lokasi5
+
+
 
 def main():
     # tampilkan(data_panen)
     # tampilkan_jagung(data_panen)
-    tampilkan_lokasi3(data_panen)
+    # tampilkan_lokasi3(data_panen)
+    print(hasil_panen)
+    
+    # # Soal Nomor 6
+    # for i, values in data_panen.items():
+    #     if hasil
     
 main()
