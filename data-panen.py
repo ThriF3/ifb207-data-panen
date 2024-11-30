@@ -40,3 +40,13 @@ data_panen = {
         }
     },
 }
+
+# Soal Nomor 1
+for i, values in data_panen.items():
+    print(f"> { i }")
+    print(f"  >> Nama Lokast :{ values['nama_lokasi'] }")
+    print("  >> Hasil Panen :");
+    for j, panen in values['hasil_panen'].items():
+        print(f"    >>> { i } :{ panen }")
+    
+    print("-------------------------------------------")
