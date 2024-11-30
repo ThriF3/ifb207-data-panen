@@ -46,7 +46,7 @@ data_panen = {
 def tampilkan(data):
     for i, values in data.items():
         print(f"> { i }")
-        print(f"  >> Nama Lokast :{ values['nama_lokasi'] }")
+        print(f"  >> Nama Lokasi :{ values['nama_lokasi'] }")
         print("  >> Hasil Panen :");
         for j, panen in values['hasil_panen'].items():
             print(f"    >>> { i } :{ panen }")
@@ -54,9 +54,14 @@ def tampilkan(data):
         print("-------------------------------------------")
     
 # Soal Nomor 2
+def tampilkan_jagung(data):
+    print("> Hasil Panen Jagung")
+    for i, values in data.items():
+        print(f"  > { values['nama_lokasi'] } : { values['hasil_panen']['jagung'] }")
 
 
 def main():
-    tampilkan(data_panen)
+    # tampilkan(data_panen)
+    tampilkan_jagung(data_panen)
     
 main()
